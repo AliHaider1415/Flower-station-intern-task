@@ -65,28 +65,26 @@ const modal = document.getElementById('modal');
           reminders.forEach((reminder, index) => {
             const reminderHTML = `
               <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500 mb-4">
-    <h3 class="text-xl font-semibold text-gray-800 flex items-center gap-2">
-        <i class="fas fa-calendar-alt text-blue-500"></i> 
-        ${reminder.eventName}
-    </h3>
-    <p class="text-gray-600 mt-2 flex items-center gap-2">
-        <i class="fas fa-calendar-day text-blue-400"></i> 
-        <span class="font-medium">Date:</span> ${reminder.eventDate}
-    </p>
-    <p class="text-gray-600 mt-2 flex items-center gap-2">
-        <i class="fas fa-envelope text-red-400"></i> 
-        <span class="font-medium">Email:</span> ${reminder.customerEmail}
-    </p>
-    <p class="text-gray-600 mt-2 flex items-center gap-2">
-        <i class="fas fa-tag text-green-400"></i> 
-        <span class="font-medium">Type:</span> 
-        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded-md">
-            ${reminder.eventType}
-        </span>
-    </p>
-</div>
-
-            `;
+                <h3 class="text-xl font-semibold text-gray-800 flex items-center gap-2">
+                    <i class="fas fa-calendar-alt text-blue-500"></i> 
+                    ${reminder.eventName}
+                </h3>
+                <p class="text-gray-600 mt-2 flex items-center gap-2">
+                    <i class="fas fa-calendar-day text-blue-400"></i> 
+                    <span class="font-medium">Date:</span> ${reminder.eventDate}
+                </p>
+                <p class="text-gray-600 mt-2 flex items-center gap-2">
+                    <i class="fas fa-envelope text-red-400"></i> 
+                    <span class="font-medium">Email:</span> ${reminder.customerEmail}
+                </p>
+                <p class="text-gray-600 mt-2 flex items-center gap-2">
+                    <i class="fas fa-tag text-green-400"></i> 
+                    <span class="font-medium">Type:</span> 
+                    <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded-md">
+                        ${reminder.eventType}
+                    </span>
+                </p>
+            </div>`;
             remindersContainer.innerHTML += reminderHTML;
           });
         } catch (error) {
