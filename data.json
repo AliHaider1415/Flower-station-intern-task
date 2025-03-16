@@ -1,0 +1,14 @@
+[
+  {
+    "eventName": "test event 1",
+    "eventDate": "2025-03-26",
+    "customerEmail": "ali@gmail.com",
+    "eventType": "Birthday"
+  },
+  {
+    "eventName": "tesst2",
+    "eventDate": "2025-03-13",
+    "customerEmail": "ali@gmail.com",
+    "eventType": "Meetting"
+  }
+]
